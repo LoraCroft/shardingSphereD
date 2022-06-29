@@ -1,6 +1,6 @@
 package com.lora.shardingsphered.entity;
 
-public class CourseEntity {
+public class Course {
 
     private Long cid;
 
@@ -42,8 +42,16 @@ public class CourseEntity {
         this.cstatus = cstatus;
     }
 
-    public CourseEntity() {
+    public Course() {
     }
 
-
+    @Override
+    public String toString() {
+        return "Course{" +
+                "cid=" + cid +
+                ", cname='" + cname + '\'' +
+                ", userId=" + userId +
+                ", cstatus='" + cstatus + '\'' +
+                '}';
+    }
 }
